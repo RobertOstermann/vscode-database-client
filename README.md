@@ -1,31 +1,27 @@
 # Database Client for Visual Studio Code
 
 <p align="center">
-<a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-mysql-client2">
-    <img src="https://img.shields.io/vscode-marketplace/v/cweijan.vscode-mysql-client2.svg?label=vscode%20marketplace">
+<a href="https://marketplace.visualstudio.com/items?itemName=RobertOstermann.database-client">
+    <img src="https://img.shields.io/vscode-marketplace/v/RobertOstermann.database-client.svg?label=vscode%20marketplace">
   </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-mysql-client2">
-    <img src="https://vsmarketplacebadge.apphb.com/installs-short/cweijan.vscode-mysql-client2.svg">
+  <a href="https://marketplace.visualstudio.com/items?itemName=RobertOstermann.database-client">
+    <img src="https://vsmarketplacebadge.apphb.com/installs-short/RobertOstermann.database-client.svg">
   </a>
-  <a href="https://github.com/cweijan/vscode-database-client">
-    <img src="https://img.shields.io/github/stars/cweijan/vscode-database-client?logo=github&style=flat">
+  <a href="https://github.com/RobertOstermann/vscode-database-client">
+    <img src="https://img.shields.io/github/stars/RobertOstermann/vscode-database-client?logo=github&style=flat">
   </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-mysql-client2">
-    <img src="https://img.shields.io/vscode-marketplace/r/cweijan.vscode-mysql-client2.svg">
+  <a href="https://marketplace.visualstudio.com/items?itemName=RobertOstermann.database-client">
+    <img src="https://img.shields.io/vscode-marketplace/r/RobertOstermann.database-client.svg">
   </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-mysql-client2">
-  <img alt="GitHub" src="https://img.shields.io/github/license/cweijan/vscode-database-client">
+  <a href="https://marketplace.visualstudio.com/items?itemName=RobertOstermann.database-client">
+  <img alt="GitHub" src="https://img.shields.io/github/license/RobertOstermann/vscode-database-client">
   </a>
 </p>
 <br>
 
-The Database Client make your life easy. It supports manager MySQL/MariaDB, PostgreSQL, SQLite, Redis, and ElasticSearch.
+The Database Client makes your life easy. It supports manager MySQL/MariaDB, PostgreSQL, SQLite, Redis, and ElasticSearch.
 
-> Project site: [vscode-database-client](https://github.com/cweijan/vscode-database-client), [中文文档](README_CN.md)
-
-If this extension is helpful to you, please consider buy author a cup of coffee:
-
-<a href="https://www.buymeacoffee.com/cweijan" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+> Project site: [vscode-database-client](https://github.com/RobertOstermann/vscode-database-client)
 
 ## Features
 
@@ -41,7 +37,7 @@ If this extension is helpful to you, please consider buy author a cup of coffee:
 
 ## Installation
 
-Install from vscode marketplace [vscode-database-client](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-mysql-client2).
+Install from vscode marketplace [vscode-database-client](https://marketplace.visualstudio.com/items?itemName=RobertOstermann.vscode-mysql-client2).
 
 ## Connect
 
@@ -123,6 +119,7 @@ Click the history button to open the list of recently executed query history rec
 
 ## Credits
 
+- [mysql](https://github.com/cweijan/vscode-database-client) which this project is forked from.
 - [sql-formatter](https://github.com/zeroturnaround/sql-formatter) Sql format lib.
 - [umy-ui](https://github.com/u-leo/umy-ui): Result view render.
 - [ssh2](https://github.com/mscdex/ssh2): SSH client.
