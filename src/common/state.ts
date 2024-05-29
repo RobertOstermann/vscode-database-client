@@ -27,7 +27,7 @@ export class WorkState {
         if (!existsSync(parentFolder)) {
             mkdirSync(parentFolder)
         }
-        const configPath = join(vscode.workspace.rootPath, '.vscode', 'datbase-client.json')
+        const configPath = join(vscode.workspace.rootPath, '.vscode', 'database-client.json')
         writeFileSync(configPath, JSON.stringify(config, null, 4))
     }
 
@@ -42,7 +42,7 @@ export class WorkState {
     private static getConfig() {
         const rootPath = vscode.workspace.rootPath;
         if (!rootPath) return null;
-        const configPath = join(rootPath, '.vscode', 'datbase-client.json')
+        const configPath = join(rootPath, '.vscode', 'database-client.json')
         if (!existsSync(configPath)) {
             return {}
         }
@@ -62,4 +62,3 @@ export function getKey(key: string): string {
 
     return key;
 }
-

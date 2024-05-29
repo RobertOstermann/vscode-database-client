@@ -97,7 +97,7 @@ export class ServiceManager {
     }
 
     private initTreeView() {
-        this.provider = new DbTreeDataProvider(this.context, CacheKey.DATBASE_CONECTIONS);
+        this.provider = new DbTreeDataProvider(this.context, CacheKey.DATABASE_CONECTIONS);
         const treeview = vscode.window.createTreeView("github.cweijan.mysql", {
             treeDataProvider: this.provider,
         });

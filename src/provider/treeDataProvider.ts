@@ -96,7 +96,7 @@ export class DbTreeDataProvider implements vscode.TreeDataProvider<Node> {
         if (dbType == DatabaseType.ES || dbType == DatabaseType.REDIS || dbType == DatabaseType.SSH || dbType == DatabaseType.FTP || dbType == DatabaseType.MONGO_DB) {
             return CacheKey.NOSQL_CONNECTION;
         }
-        return CacheKey.DATBASE_CONECTIONS;
+        return CacheKey.DATABASE_CONECTIONS;
     }
 
 
@@ -121,7 +121,7 @@ export class DbTreeDataProvider implements vscode.TreeDataProvider<Node> {
     public getConnectionNodes(): Node[] {
 
         const connetKey = this.connectionKey;
-        const oldKey = connetKey == CacheKey.DATBASE_CONECTIONS ? "mysql.connections" : "redis.connections";
+        const oldKey = connetKey == CacheKey.DATABASE_CONECTIONS ? "mysql.connections" : "redis.connections";
         let regacyGlobalConnections = GlobalState.get<{ [key: string]: Node }>(oldKey, {});
         let globalConnections = GlobalState.get<{ [key: string]: Node }>(connetKey, {});
         let workspaceConnections = WorkState.get<{ [key: string]: Node }>(connetKey, {});

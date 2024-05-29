@@ -20,7 +20,7 @@ export class Pattern {
 
 export enum CacheKey {
     // sql
-    DATBASE_CONECTIONS = "database.connections",
+    DATABASE_CONECTIONS = "database.connections",
     DATABASE_SATE = "mysql.database.cache.collapseState",
     // nosql
     NOSQL_CONNECTION = "nosql.connections",

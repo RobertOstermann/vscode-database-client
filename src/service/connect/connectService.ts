@@ -120,7 +120,7 @@ export class ConnectService {
     }
 
     static listenConfig(): Disposable {
-        const workConfigPath = vscode.workspace.rootPath ? join(vscode.workspace.rootPath, '.vscode', 'datbase-client.json') : null
+        const workConfigPath = vscode.workspace.rootPath ? join(vscode.workspace.rootPath, '.vscode', 'database-client.json') : null
         const configPath = resolve(FileManager.getPath("config.json"))
         workspace.onDidCloseTextDocument(e => {
             const changePath = resolve(e.uri.fsPath);
@@ -143,10 +143,10 @@ export class ConnectService {
         try {
             const connectonConfig: ConnnetionConfig = JSON.parse(configContent)
             if (isWork) {
-                await WorkState.update(CacheKey.DATBASE_CONECTIONS, connectonConfig[CacheKey.DATBASE_CONECTIONS]);
+                await WorkState.update(CacheKey.DATABASE_CONECTIONS, connectonConfig[CacheKey.DATABASE_CONECTIONS]);
                 await WorkState.update(CacheKey.NOSQL_CONNECTION, connectonConfig[CacheKey.NOSQL_CONNECTION]);
             } else {
-                await GlobalState.update(CacheKey.DATBASE_CONECTIONS, connectonConfig.database);
+                await GlobalState.update(CacheKey.DATABASE_CONECTIONS, connectonConfig.database);
                 await GlobalState.update(CacheKey.NOSQL_CONNECTION, connectonConfig.nosql);
                 unlinkSync(path)
             }
@@ -159,7 +159,7 @@ export class ConnectService {
     public openConfig() {
 
         const connectonConfig: ConnnetionConfig = {
-            database: GlobalState.get(CacheKey.DATBASE_CONECTIONS),
+            database: GlobalState.get(CacheKey.DATABASE_CONECTIONS),
             nosql: GlobalState.get(CacheKey.NOSQL_CONNECTION)
         };
 
